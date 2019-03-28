@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Converter para maiúsculo</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 16px;
+        }
+        .container {
+            height: 80px;
+            width: 300px;
+        }
+        p {
+            margin-bottom: 2px;
+        }
+        input[type="text"] {
+            border: #CCC 1px dotted;
+            box-sizing: border-box;
+            font-size: 16px;
+            margin-bottom: 5px;
+            padding: 2px;
+            width: 100%;
+        }
+        button {
+            box-sizing: border-box;
+            margin: 0 auto;
+            margin-bottom: 5px;
+            width: 49%;
+        }
+        #result-container {
+            margin: 5px 0;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Digite um texto e clique em converter.</p>
+        <input type="text" id="text-to-convert" placeholder="Insira o texto ...">
+        <button id="convert-command">Converter</button>
+        <button id="copy-command">Copiar</button>
+        <div id="result-container">
+        </div> <!-- #resultado -->
+    </div> <!-- .container -->
+
+    <script src="script.js"></script>
+</body>
+</html>

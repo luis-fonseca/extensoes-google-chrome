@@ -1,0 +1,9 @@
+{
+    "name": "Converter em maiúsculo",
+    "version": "1.0",
+    "description": "O script converte o texto em letras maiúsculas.",
+    "browser_action": {
+        "default_popup": "index.html"
+    },
+    "manifest_version": 2
+}
