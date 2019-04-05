@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Converter caracteres</title>
+</head>
+<body>
+    <div class="container">
+        <p>Informe o texto, forma de conversão e clique em converter.</p>
+        <!-- input -->
+        <label for="text-to-convert">Texto para converter</label>
+        <div class="container-text">
+           <textarea name="text-to-convert" id="text-to-convert" cols="30" rows="10"></textarea>
+           <div id="info" class="info d-none"></div>
+        </div>
+        <!-- end input -->
+        <!-- actions buttons -->
+        <div class="action-buttons">
+           <button class="convert-button" title="Converter" id="convert-button"><i class="icon-sync"></i></button>
+           <button class="clear-button" title="Limpar" id="clear-button"><i class="icon-delete"></i></button>
+           <button class="copy-button" title="Copiar" id="copy-button"><i class="icon-content_copy" id="copy-button"></i></button>
+        </div>
+        <!-- end actions buttons -->
+
+        <!-- options-->
+        <label for="uppercase-option" class="option-case" title="Converte o texto em letras maiúsculas.">
+           <input type="radio" name="case-option" id="uppercase-option" value="1" checked>Maiúsculo
+        </label>
+        <label for="lowercase-option" class="option-case" title="Converte o texto em letras minúsculas.">
+           <input type="radio" name="case-option" id="lowercase-option" value="2">Minúsculo
+        </label>
+        <label for="titlecase-option" class="option-case" title="Converte a primeira letra de cada palavra em maiúscula.">
+           <input type="radio" name="case-option" id="titlecase-option" value="3" class="input-radios">Título
+        </label>
+        <!-- end options-->
+
+        <!-- result -->
+        <div class="result d-none" id="result">
+        </div>
+        <!-- end result -->
+     </div>
+    <script src="script.js"></script>
+</body>
+</html>
